@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<link rel="stylesheet" href="./style.css" >
+</head>
+<style>
+    body{
+	background-color:black;
+    color: wheat;
+    background: url(../../../neTcon/netcon_4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+	padding-inline: 20px;
+}
+#form{
+	background-color: black;
+	width: 30%;
+	margin: 120px auto;
+	padding: 50px;
+	box-shadow: 2px 4px 5px 6px #b46305;
+	border-radius: 6px;
+}
+#btn{
+	color: white;
+	background-color: rgb(165, 111, 10);
+	padding: 10px;
+	font-size: large;
+	border-radius: 10px;
+}
+</style>
+<body>
+    <form id="form" action="login.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="email">email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login" id="btn">
+    </form>
+</body>
+</html>
